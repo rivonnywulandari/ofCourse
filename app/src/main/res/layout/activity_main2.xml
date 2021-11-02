@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_ungu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:paddingTop="70dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/font" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:text="Mata Pelajaran yang ditawarkan"
+                android:textColor="#000000"
+                android:textSize="20dp"></TextView>
+
+            <ImageButton
+                android:id="@+id/english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/english" />
+
+            <ImageView
+                android:id="@+id/matematika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/matematika" />
+
+            <ImageView
+                android:id="@+id/indonesia"
+                android:layout_width="331dp"
+                android:layout_height="133dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="14dp"
+                app:srcCompat="@drawable/indonesia" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageButton
+                android:id="@+id/buttonHome"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/beranda" />
+
+            <ImageButton
+                android:id="@+id/buttonCari"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/search" />
+
+            <ImageButton
+                android:id="@+id/buttonList"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/list" />
+
+            <ImageButton
+                android:id="@+id/buttonProfile"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/profile" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -8,7 +8,7 @@
     tools:context=".ProfileActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView1"
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:layout_marginTop="169dp"
@@ -101,5 +101,50 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageButton
+                android:id="@+id/buttonHome"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/beranda" />
+
+            <ImageButton
+                android:id="@+id/buttonCari"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/search" />
+
+            <ImageButton
+                android:id="@+id/buttonList"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/list" />
+
+            <ImageButton
+                android:id="@+id/buttonProfile"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/profile" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

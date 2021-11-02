@@ -1,43 +1,32 @@
 package com.example.ofcourse;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-public class ProfileActivity extends AppCompatActivity {
-    Button buttonEdit, buttonLogout;
+public class MainActivity2 extends AppCompatActivity {
+    ImageButton english;
     ImageButton buttonHome, buttonCari, buttonList, buttonProfile;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
 
-        buttonEdit = findViewById(R.id.buttonEdit);
-        buttonLogout = findViewById(R.id.buttonLogout);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+
+        english = findViewById(R.id.english);
 
         buttonHome =  findViewById(R.id.buttonHome);
         buttonCari= findViewById(R.id.buttonCari);
         buttonList = findViewById(R.id.buttonList);
         buttonProfile = findViewById(R.id.buttonProfile);
 
-        buttonEdit.setOnClickListener(new View.OnClickListener() {
+        english.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfileActivity.this, EditActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        buttonLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+                Intent intent = new Intent(MainActivity2.this, pencarian.class);
                 startActivity(intent);
             }
         });
@@ -46,7 +35,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfileActivity.this, MainActivity2.class);
+                Intent intent = new Intent(MainActivity2.this, MainActivity2.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +44,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfileActivity.this, pencarian.class);
+                Intent intent = new Intent(MainActivity2.this, pencarian.class);
                 startActivity(intent);
             }
         });
@@ -64,7 +53,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfileActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(MainActivity2.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });
@@ -73,9 +62,10 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfileActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(MainActivity2.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });
+
     }
 }

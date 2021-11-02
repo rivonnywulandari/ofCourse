@@ -10,6 +10,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OfCourse">
         <activity
+            android:name=".review_berhasil"
+            android:exported="true" />
+        <activity
+            android:name=".pesanan_disetujui"
+            android:exported="true" />
+        <activity
+            android:name=".pesanan_belum_disetujui"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true" />
+        <activity
+            android:name=".detail_guru"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".hasil_cari"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".pencarian"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".EditActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
