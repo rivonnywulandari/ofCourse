@@ -26,7 +26,7 @@ public class detail_guru extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(detail_guru.this, MainActivity2.class);
+                Intent intent = new Intent(detail_guru.this, Dashboard.class);
                 startActivity(intent);
             }
         });

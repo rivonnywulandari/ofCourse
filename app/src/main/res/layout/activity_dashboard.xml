@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard">
+    tools:context=".Dashboard"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,13 +14,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             android:background="@drawable/background_ungu">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="100dp"
-                android:paddingTop="70dp">
+                android:paddingTop="50dp">
 
                 <ImageView
                     android:layout_width="200dp"
@@ -36,6 +37,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Terpopuler">
             </TextView>
         </RelativeLayout>
@@ -71,6 +73,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="#3C3838"
                         android:text="Matematika"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -99,6 +102,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="#3C3838"
                         android:text="Kimia"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -127,6 +131,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="#3C3838"
                         android:text="Fisika"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -163,6 +168,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="#3C3838"
                         android:text="Bahasa Inggris"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -191,6 +197,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="#3C3838"
                         android:text="Biologi"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -219,6 +226,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="#3C3838"
                         android:text="TPA"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -267,6 +275,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="#3C3838"
                         android:text="Gitar"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -294,6 +303,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="#3C3838"
                         android:text="Piano"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -320,9 +330,51 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="#3C3838"
                         android:text="Biola"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageButton
+                android:id="@+id/buttonHome"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/beranda" />
+
+            <ImageButton
+                android:id="@+id/buttonCari"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/search" />
+
+            <ImageButton
+                android:id="@+id/buttonList"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/list" />
+
+            <ImageButton
+                android:id="@+id/buttonProfile"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/profile" />
+
+        </LinearLayout>
+
     </LinearLayout>
-</ScrollView>
+</RelativeLayout>

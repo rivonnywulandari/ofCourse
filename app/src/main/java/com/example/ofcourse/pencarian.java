@@ -46,7 +46,7 @@ public class pencarian extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(pencarian.this, MainActivity2.class);
+                Intent intent = new Intent(pencarian.this, Dashboard.class);
                 startActivity(intent);
             }
         });

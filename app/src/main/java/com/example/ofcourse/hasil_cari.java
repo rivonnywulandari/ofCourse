@@ -35,7 +35,7 @@ public class hasil_cari extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(hasil_cari.this, MainActivity2.class);
+                Intent intent = new Intent(hasil_cari.this, Dashboard.class);
                 startActivity(intent);
             }
         });
