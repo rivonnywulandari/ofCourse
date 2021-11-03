@@ -6,11 +6,5 @@
     android:layout_height="match_parent"
     tools:context=".listmatpel">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="List matpel"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="210dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
