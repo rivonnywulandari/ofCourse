@@ -5,6 +5,7 @@ public class Mapel {
     public String nama_mapel;
     public String lokasi;
     public String score;
+    public int photo;
 
     public Mapel(){
 
